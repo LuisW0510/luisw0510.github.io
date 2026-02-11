@@ -1,1 +1,1 @@
-Der Startpunkt meines "Blogs"
+Der Startpunkt 
