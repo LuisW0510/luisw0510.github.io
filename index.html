@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mein Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 40vw;
+            margin: 2em auto;
+            background: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+        h2 {
+            color: #333;
+            padding-bottom: 10px; /* Abstand zwischen Text und Linie */
+            border-bottom: 2px solid #eee; /* Die Trennlinie: dünn, solid und hellgrau */
+            margin-bottom: 20px; /* Abstand zum nachfolgenden Inhalt */
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Meine Projekte</h1>
+</header>
+<nav>
+    <a href="#">Über mich</a>
+    <a href="#">Kontakt</a>
+</nav>
+<main>
+    <h2>Beiträge:</h2>
+    <ul style="list-style: none; padding: 0;">
+        
+        <li style="margin-bottom: 15px;">
+            <a href="1_Erster Blogeintrag.html" style="
+                text-decoration: none; 
+                color: #333; 
+                font-size: 1.1em; 
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                transition: background 0.3s;
+                background: #fdfdfd;
+                border: 1px solid #eee;
+            " onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='#fdfdfd'">
+                📄 1 erster blogeintrag
+            </a>
+        </li>
+        <li style="margin-bottom: 15px;">
+            <a href="2_Projekt Nr 2.html" style="
+                text-decoration: none; 
+                color: #333; 
+                font-size: 1.1em; 
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                transition: background 0.3s;
+                background: #fdfdfd;
+                border: 1px solid #eee;
+            " onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='#fdfdfd'">
+                📄 2 projekt nr 2
+            </a>
+        </li>
+        <li style="margin-bottom: 15px;">
+            <a href="3_Das super Skript.html" style="
+                text-decoration: none; 
+                color: #333; 
+                font-size: 1.1em; 
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                transition: background 0.3s;
+                background: #fdfdfd;
+                border: 1px solid #eee;
+            " onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='#fdfdfd'">
+                📄 3 das super skript
+            </a>
+        </li>
+    </ul>
+</main>
+<footer>
+    &copy; 2026 Meine Projekte
+</footer>
+</body>
+</html>
