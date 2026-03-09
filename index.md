@@ -1,1 +1,0 @@
-Der Startpunkt 
