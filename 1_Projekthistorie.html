@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>1_Projekthistorie.md</title>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+               line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f9f9f9; }
+        main { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: relative; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #888; font-size: 0.9em; transition: color 0.2s; }
+        .back-link:hover { color: #333; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        pre { background: #f4f4f4; padding: 15px; overflow-x: auto; border-radius: 5px; }
+        img { max-width: 100%; height: auto; border-radius: 5px; margin: 20px 0; display: block; }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
+        <h1>09.03.2026 - 1_Projekthistorie</h1>
+<p>Als erstes Projekt habe ich diese Website in Angriff genommen. Das Ziel war es "Blog"-mäßig einen Ort zu schaffen, an dem ich all meine Projekte dokumentieren kann.</p>
+<p>Da ich generell versuche mit Obsidian zu arbeiten ist die Idee der Sache, dass ich einfach eine neue Notiz in Obsidian erstelle und dann über ein Python-Skript diese .md Datei in einen neuen Website-Beitrag umwandle.</p>
+<hr />
+<h2>Erwünschter Workflow:</h2>
+<ol>
+<li>Notiz in Obsidian anlegen und Projekt beschreiben</li>
+<li>Skript ausführen</li>
+</ol>
+<p>=&gt; Website wird automatisch angepasst</p>
+<h2>Umsetzung:</h2>
+<p>Das Ganze wird folgendermaßen umgesetzt:
+Zuerst werden alle .md Dateien in .html Files konvertiert. Dabei müssen auch benutzte Bilder beachtet werden, da diese von Obsidian an einem anderen Ort gespeichert werden. Dann wird eine index.html als Startpunkt generiert, in der Links auf alle gerade erstellten Files aufgelistet sind. Diese index.html fungiert dann wie ein Inhaltsverzeichnis der Projekthistorie. Anschließend wird ein Github-Repo geklont und die neu angelegten bzw. veränderten Files werden dort hineingepusht. Über einen Github-Actions Workflow wird dann aus den html files des Repostiories automatisch eine Website aufgebaut und gehostet. </p>
+<h2>Ergebnis:</h2>
+<p>Das Endergebnis sieht dann ca so aus:
+<img src="assets/Pasted image 20260309162925.png" alt="Pasted image 20260309162925.png"></p>
+<p>Die Beiträge sind dann natürlich clickbar und führen zur passenden Projektseite.</p>
+    </main>
+</body>
+</html>
